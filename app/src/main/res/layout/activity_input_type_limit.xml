@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yanftch.collections.edittext.InputTypeLimitActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="第一次打开数字键盘，后续可以随意切换；输入字符只能是0-9、X、x"
+        />
+
+    <EditText
+        android:id="@+id/et_main"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:hint="第一次打开键盘为数字键盘"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

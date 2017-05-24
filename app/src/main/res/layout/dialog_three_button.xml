@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fw"
+    android:orientation="vertical"
+    android:background="#6b6b6c"
+    android:id="@+id/root"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip">
+
+    <Button
+        style="@style/fw"
+        android:text="按钮1"
+        android:padding="12dip"
+        android:layout_marginTop="6dip"
+        android:textColor="#686868"
+        android:textSize="18sp"
+        android:background="@drawable/button_white_selector"
+        android:id="@+id/btn_1"/>
+    <Button
+        style="@style/fw"
+        android:text="按钮2"
+        android:padding="12dip"
+        android:layout_marginTop="6dip"
+        android:textColor="#686868"
+        android:textSize="18sp"
+        android:id="@+id/btn_2"
+        android:background="@drawable/button_white_selector"/>
+    <Button
+        style="@style/fw"
+        android:text="取消"
+        android:padding="12dip"
+        android:layout_marginTop="20dip"
+        android:textColor="#686868"
+        android:textSize="18sp"
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/button_white_selector"/>
+</LinearLayout>
