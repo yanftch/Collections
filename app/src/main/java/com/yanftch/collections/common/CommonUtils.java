@@ -58,7 +58,9 @@ public class CommonUtils {
         editText.setKeyListener(new NumberKeyListener() {
             @Override
             protected char[] getAcceptedChars() {
-                return chars;
+                //若设置null，则默认只能输入数字
+                char defaultChars[] = char_number;
+                return null == chars ? defaultChars : chars;
             }
 
             /**

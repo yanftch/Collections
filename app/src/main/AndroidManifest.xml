@@ -35,6 +35,8 @@
         <activity android:name="com.yan.imgpicker.camera.MainActivity"/>
         <activity android:name=".edittext.InputTypeLimitActivity">
         </activity>
+        <activity android:name=".circlemenu.CircleMenuLayoutActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.xrecyclerview.XRecyclerViewActivity;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_04://
                 startActivity(InputTypeLimitActivity.class);
                 break;
+            case R.id.btn_05:
+                startActivity(CircleMenuLayoutActivity.class);
             default:
                 break;
 
