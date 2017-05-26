@@ -37,6 +37,10 @@
         </activity>
         <activity android:name=".circlemenu.CircleMenuLayoutActivity">
         </activity>
+        <activity android:name=".convenientbanner.ConvenientBannerActivity">
+        </activity>
+        <activity android:name=".convenientbanner.threesteps.ThreeStepsActivity">
+        </activity>
     </application>
 
 </manifest>

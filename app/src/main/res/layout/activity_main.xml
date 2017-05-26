@@ -37,12 +37,21 @@
         android:onClick="btnTurnAct"
         android:text="只能输入特定字符的EditText"
         android:textAllCaps="false"/>
+
     <Button
         android:id="@+id/btn_05"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="btnTurnAct"
         android:text="圆形"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnTurnAct"
+        android:text="ConvenientBanner"
         android:textAllCaps="false"/>
 
 
