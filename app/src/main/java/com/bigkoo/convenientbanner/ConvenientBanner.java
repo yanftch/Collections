@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.PageTransformer;
 import android.util.AttributeSet;
@@ -344,5 +345,32 @@ public class ConvenientBanner<T> extends LinearLayout {
     public void setCanLoop(boolean canLoop) {
         this.canLoop = canLoop;
         viewPager.setCanLoop(canLoop);
+    }
+
+    private Handler handler = new Handler();
+    private Runnable adRightTask = new Runnable() {
+        @Override
+        public void run() {
+            if (viewPager != null) {
+                int page = viewPager.getCurrentItem() + 1;
+                viewPager.setCurrentItem(page);
+            }
+        }
+    };
+    private Runnable adLeftTask = new Runnable() {
+        @Override
+        public void run() {
+            if (viewPager != null) {
+                int page = viewPager.getCurrentItem() - 1;
+                viewPager.setCurrentItem(page);
+            }
+        }
+    };
+    public void leftTurn(){
+        handler.postDelayed(adLeftTask, 200);
+    }
+
+    public void rightTurn(){
+        handler.postDelayed(adRightTask, 200);
     }
 }

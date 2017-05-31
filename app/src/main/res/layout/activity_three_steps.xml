@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               tools:context="com.yanftch.collections.convenientbanner.threesteps.ThreeStepsActivity">
-    <com.bigkoo.convenientbanner.ConvenientBanner
-        android:id="@+id/convenientBanners"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:canLoop="false"
-        />
+        android:layout_height="match_parent">
 
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanners"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canLoop="false"
+            />
 
+        <ImageView
+            android:id="@+id/poster_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_poster_left_arrow"/>
+
+        <ImageView
+            android:id="@+id/poster_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:padding="8dp"
+            android:src="@drawable/ic_poster_right_arrow"/>
+    </FrameLayout>
 </LinearLayout>
