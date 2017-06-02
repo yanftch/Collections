@@ -9,7 +9,7 @@ import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
-import com.yanftch.collections.swiperecyclerview.SwipeRecyclerViewActivity;
+import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.test.TestActivity;
 import com.yanftch.collections.xrecyclerview.XRecyclerViewActivity;
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(TestActivity.class);
                 break;
             case R.id.btn_08:
-                startActivity(SwipeRecyclerViewActivity.class);
+                startActivity(EditTextAutoActivity.class);
                 break;
             default:
                 break;

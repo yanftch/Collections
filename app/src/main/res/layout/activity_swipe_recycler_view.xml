@@ -4,12 +4,34 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.swiperecyclerview.SwipeRecyclerViewActivity">
+              tools:context="com.yanftch.collections.swiperecyclerview.EditTextAutoActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_auto_1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="test"/>
+
+    <EditText
+        android:id="@+id/et_auto_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入1"
         />
 
+    <EditText
+        android:id="@+id/et_auto_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="输入2"
+        />
+
+    <EditText
+        android:id="@+id/et_auto_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="输入3"
+        />
 </LinearLayout>

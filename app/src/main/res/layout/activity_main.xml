@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btnTurnAct"
-            android:text="SwipeRecyclerView"
+            android:text="点击屏幕收起键盘"
             android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>

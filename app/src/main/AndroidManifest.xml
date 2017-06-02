@@ -44,7 +44,7 @@
         </activity>
         <activity android:name=".test.TestActivity">
         </activity>
-        <activity android:name=".swiperecyclerview.SwipeRecyclerViewActivity">
+        <activity android:name=".swiperecyclerview.EditTextAutoActivity">
         </activity>
     </application>
 
