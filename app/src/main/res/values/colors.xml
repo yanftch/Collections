@@ -8,4 +8,6 @@
     <color name="color_cccccc">#cccccc</color>
     <color name="transparent">#00ffffff</color>
     <color name="background">#FFFFFF</color>
+    <color name="color_44dd33">#44dd33</color>
+    <color name="color_ffffff">#ffffff</color>
 </resources>

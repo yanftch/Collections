@@ -8,4 +8,6 @@
     <dimen name="value_115_dp">115dp</dimen>
     <dimen name="value_18_sp">18sp</dimen>
     <dimen name="textandiconmargin">10dp</dimen>
+    <dimen name="value_1_dp">1dp</dimen>
+    <dimen name="value_40_dp">40dp</dimen>
 </resources>

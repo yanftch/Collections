@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
+import com.yanftch.collections.miui_tab_triangle.MIUI_TriangleActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.test.TestActivity;
@@ -22,15 +24,17 @@ import com.yanftch.collections.xrecyclerview.XRecyclerViewActivity;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "dah_MainActivity";
     int[] array = {12, 1, 3, 34, 121, 565};
+    private EditText mEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        testFunction();
+
     }
 
     private void testFunction() {
+
     }
 
     public void btnTurnAct(View view) {
@@ -59,8 +63,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_08:
                 startActivity(EditTextAutoActivity.class);
                 break;
+            case R.id.btn_09:
+                startActivity(MIUI_TriangleActivity.class);
+                break;
             default:
                 break;
+
 
         }
     }

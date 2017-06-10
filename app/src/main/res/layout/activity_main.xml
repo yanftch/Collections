@@ -5,77 +5,87 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               tools:context="com.yanftch.collections.MainActivity">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_01"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="侧滑ListView菜单"
-            android:textAllCaps="false"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_02"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="XRecyclerView"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="侧滑ListView菜单"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_03"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="意见反馈选择图片5张"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="XRecyclerView"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_04"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="只能输入特定字符的EditText"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="意见反馈选择图片5张"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_05"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="圆形"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="只能输入特定字符的EditText"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_06"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="ConvenientBanner"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="圆形"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_07"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="test"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="ConvenientBanner"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_08"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="btnTurnAct"
-            android:text="点击屏幕收起键盘"
-            android:textAllCaps="false"/>
-    </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/btn_07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="test"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="点击屏幕收起键盘"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="仿MIUI三角形TAB切换"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

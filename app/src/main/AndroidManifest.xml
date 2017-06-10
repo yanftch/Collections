@@ -46,6 +46,8 @@
         </activity>
         <activity android:name=".swiperecyclerview.EditTextAutoActivity">
         </activity>
+        <activity android:name=".miui_tab_triangle.MIUI_TriangleActivity">
+        </activity>
     </application>
 
 </manifest>
