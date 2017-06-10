@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/color_ffffff"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.tab_viewpagerindicater.MIUI_TriangleActivity">
+              tools:context="com.yanftch.collections.tab_viewpagerindicater.EqualsLengthActivity">
 
-    <com.yanftch.collections.tab_viewpagerindicater.TriangleViewPagerIndicator
-        android:id="@+id/vp_indicator"
+    <com.yanftch.collections.tab_viewpagerindicater.ViewPagerIndicator
+        android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="@dimen/value_40_dp"
         android:background="@color/color_999999"
-        android:orientation="horizontal"
-        app:visible_tab_count="3">
-
-    </com.yanftch.collections.tab_viewpagerindicater.TriangleViewPagerIndicator>
+        android:orientation="horizontal"/>
 
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </LinearLayout>

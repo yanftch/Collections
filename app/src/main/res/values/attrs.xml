@@ -63,5 +63,8 @@
     </declare-styleable>
     <!---->
 
-
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" format="integer"/>
+        <attr name="item_magnification" format="integer"/>
+    </declare-styleable>
 </resources>

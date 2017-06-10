@@ -9,9 +9,9 @@ import android.widget.EditText;
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
-import com.yanftch.collections.miui_tab_triangle.MIUI_TriangleActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
+import com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
 import com.yanftch.collections.test.TestActivity;
 import com.yanftch.collections.xrecyclerview.XRecyclerViewActivity;
 
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(EditTextAutoActivity.class);
                 break;
             case R.id.btn_09:
-                startActivity(MIUI_TriangleActivity.class);
+                startActivity(AllKindsOfViewPagerIndicaterActivity.class);
                 break;
             default:
                 break;

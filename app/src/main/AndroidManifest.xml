@@ -46,7 +46,11 @@
         </activity>
         <activity android:name=".swiperecyclerview.EditTextAutoActivity">
         </activity>
-        <activity android:name=".miui_tab_triangle.MIUI_TriangleActivity">
+        <activity android:name=".tab_viewpagerindicater.MIUI_TriangleActivity">
+        </activity>
+        <activity android:name=".tab_viewpagerindicater.EqualsLengthActivity">
+        </activity>
+        <activity android:name=".tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity">
         </activity>
     </application>
 

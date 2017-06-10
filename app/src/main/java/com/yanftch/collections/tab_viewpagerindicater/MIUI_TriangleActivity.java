@@ -1,4 +1,4 @@
-package com.yanftch.collections.miui_tab_triangle;
+package com.yanftch.collections.tab_viewpagerindicater;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
