@@ -54,6 +54,8 @@
         </activity>
         <activity android:name=".five_photos.SelectFivePhotosActivity">
         </activity>
+        <activity android:name=".pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity">
+        </activity>
     </application>
 
 </manifest>
