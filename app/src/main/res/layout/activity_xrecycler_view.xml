@@ -6,11 +6,11 @@
               android:orientation="vertical"
               tools:context="com.yanftch.collections.xrecyclerview.XRecyclerViewActivity">
 
-    <com.jcodecraeer.xrecyclerview.XRecyclerView
+    <com.iven.widget.jcodecraeer.xrecyclerview.XRecyclerView
         android:id="@+id/xrecycler_view"
-        android:overScrollMode="never"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:overScrollMode="never"
         />
 
 </LinearLayout>

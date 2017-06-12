@@ -1,4 +1,4 @@
-<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.iven.widget.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                 android:id="@+id/swipeLayout"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/value_115_dp">
@@ -92,4 +92,4 @@
         </RelativeLayout>
     </LinearLayout>
     <!-- Surface View End -->
-</com.daimajia.swipe.SwipeLayout>
+</com.iven.widget.daimajia.swipe.SwipeLayout>

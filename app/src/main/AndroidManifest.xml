@@ -33,7 +33,6 @@
         </activity>
         <activity android:name=".xrecyclerview.XRecyclerViewActivity">
         </activity>
-        <activity android:name="com.yan.imgpicker.camera.MainActivity"/>
         <activity android:name=".edittext.InputTypeLimitActivity">
         </activity>
         <activity android:name=".circlemenu.CircleMenuLayoutActivity">
@@ -44,6 +43,7 @@
         </activity>
         <activity android:name=".test.TestActivity">
         </activity>
+        <activity android:name="com.iven.widget.yan.imgpicker.util.BasePhotoActivity"/>
         <activity android:name=".swiperecyclerview.EditTextAutoActivity">
         </activity>
         <activity android:name=".tab_viewpagerindicater.MIUI_TriangleActivity">
@@ -51,6 +51,8 @@
         <activity android:name=".tab_viewpagerindicater.EqualsLengthActivity">
         </activity>
         <activity android:name=".tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity">
+        </activity>
+        <activity android:name=".five_photos.SelectFivePhotosActivity">
         </activity>
     </application>
 

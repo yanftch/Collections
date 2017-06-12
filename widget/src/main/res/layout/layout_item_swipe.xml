@@ -1,0 +1,95 @@
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/swipeLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_115_dp">
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="@dimen/value_160_dp"
+        android:layout_height="match_parent"
+        android:background="#66ddff00"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--What you want to show-->
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/value_5_dp"
+            android:drawableTop="@mipmap/goto_top"
+            android:text="置顶"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/value_18_sp"/>
+
+        <TextView
+            android:id="@+id/tv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_10_dp"
+            android:drawablePadding="@dimen/value_5_dp"
+            android:drawableTop="@mipmap/col_delete"
+            android:text="收藏"
+            android:textColor="@color/color_222222"
+            android:textSize="@dimen/value_18_sp"/>
+    </LinearLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="@dimen/value_5_dp">
+        <!--What you want to show in SurfaceView-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value_5_dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_5_dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="title"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/value_16_sp"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="desc"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/value_14_sp"/>
+
+            <TextView
+                android:id="@+id/tv_votecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_desc"
+                android:layout_marginTop="@dimen/value_5_dp"
+                android:text="123"
+                android:textColor="@color/color_cccccc"
+                />
+
+            <TextView
+                android:id="@+id/tv_replyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_desc"
+                android:layout_marginTop="@dimen/value_5_dp"
+                android:text="321"
+                android:textColor="@color/color_cccccc"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

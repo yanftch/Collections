@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimajia.swipe.SimpleSwipeListener;
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.adapters.BaseSwipeAdapter;
+import com.iven.widget.daimajia.swipe.SimpleSwipeListener;
+import com.iven.widget.daimajia.swipe.SwipeLayout;
+import com.iven.widget.daimajia.swipe.adapters.BaseSwipeAdapter;
 import com.yanftch.collections.R;
 import com.yanftch.collections.common.Bean;
 

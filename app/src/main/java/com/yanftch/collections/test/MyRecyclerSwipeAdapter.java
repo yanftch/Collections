@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimajia.swipe.SwipeLayout;
+import com.iven.widget.daimajia.swipe.SwipeLayout;
 import com.yanftch.collections.R;
 
 import java.util.List;

@@ -5,13 +5,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
-import com.bigkoo.convenientbanner.ConvenientBanner;
-import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
+import com.iven.widget.bigkoo.convenientbanner.ConvenientBanner;
+import com.iven.widget.bigkoo.convenientbanner.holder.CBViewHolderCreator;
 import com.yanftch.collections.R;
 
 import java.util.ArrayList;
@@ -30,9 +27,6 @@ public class ThreeStepsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_three_steps);
         initViews();
         init();
-        WebView view = new WebView(this);
-        WebViewClient client = new WebViewClient();
-        WebSettings settings = view.getSettings();
         initLeftRightListener();
     }
 
@@ -139,8 +133,6 @@ public class ThreeStepsActivity extends AppCompatActivity {
         //停止翻页
         convenientBanner.stopTurning();
     }
-
-
 
 
 }

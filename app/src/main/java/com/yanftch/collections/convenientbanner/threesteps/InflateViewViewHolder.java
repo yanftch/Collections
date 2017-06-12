@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.bigkoo.convenientbanner.holder.Holder;
+import com.iven.widget.bigkoo.convenientbanner.holder.Holder;
 import com.yanftch.collections.MainActivity;
 import com.yanftch.collections.R;
 

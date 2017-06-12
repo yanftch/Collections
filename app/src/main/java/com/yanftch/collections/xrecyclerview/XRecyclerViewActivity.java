@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jcodecraeer.xrecyclerview.ProgressStyle;
-import com.jcodecraeer.xrecyclerview.XRecyclerView;
+import com.iven.widget.jcodecraeer.xrecyclerview.ProgressStyle;
+import com.iven.widget.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.yanftch.collections.R;
 
 import java.util.ArrayList;

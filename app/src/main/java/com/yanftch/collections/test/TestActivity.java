@@ -5,8 +5,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 
-import com.jcodecraeer.xrecyclerview.ProgressStyle;
-import com.jcodecraeer.xrecyclerview.XRecyclerView;
+import com.iven.widget.jcodecraeer.xrecyclerview.ProgressStyle;
+import com.iven.widget.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.yanftch.collections.R;
 
 import java.util.ArrayList;

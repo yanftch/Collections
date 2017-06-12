@@ -9,6 +9,7 @@ import android.widget.EditText;
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
+import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(XRecyclerViewActivity.class);
                 break;
             case R.id.btn_03://
-                startActivity(com.yan.imgpicker.camera.MainActivity.class);
+                startActivity(SelectFivePhotosActivity.class);
                 break;
             case R.id.btn_04://
                 startActivity(InputTypeLimitActivity.class);

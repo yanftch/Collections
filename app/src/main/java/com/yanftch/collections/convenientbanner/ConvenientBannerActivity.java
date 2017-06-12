@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.bigkoo.convenientbanner.ConvenientBanner;
-import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
-import com.bigkoo.convenientbanner.listener.OnItemClickListener;
+import com.iven.widget.bigkoo.convenientbanner.ConvenientBanner;
+import com.iven.widget.bigkoo.convenientbanner.holder.CBViewHolderCreator;
+import com.iven.widget.bigkoo.convenientbanner.listener.OnItemClickListener;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;

@@ -4,7 +4,8 @@ import android.content.Context;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.bigkoo.convenientbanner.holder.Holder;
+import com.iven.widget.bigkoo.convenientbanner.holder.Holder;
+
 /**
  *
  * Author : yanftch
