@@ -55,5 +55,36 @@
     <style name="fwwh" parent="@style/fww">
         <item name="android:orientation">horizontal</item>
     </style>
+    <!-- dialog 样式  activity变暗 -->
+    <style name="dialog_background_dimEnabled" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- activity 变暗 dd-->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:textColor">@color/color_242424</item>
+    </style>
+    <!--Dialog进出动画-->
+    <!--<style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>-->
+    <!--</style>-->
 
+
+    <style name="textViewNoPadding">
+        <item name="android:lineSpacingMultiplier">0.9</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="gray_text_middle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_grays</item>
+    </style>
 </resources>

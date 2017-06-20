@@ -94,6 +94,13 @@
                 android:onClick="btnTurnAct"
                 android:text="自带上拉下拉侧滑的ListView"
                 android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="Dialog封装 and 倒计时"
+                android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
+import com.yanftch.collections.dialog_and_countdown.DialogAndCountdownBtnActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
 import com.yanftch.collections.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
@@ -70,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_10:
                 startActivity(PulltoRefreshSwipemenuListviewActivity.class);
+                break;
+            case R.id.btn_11:
+                startActivity(DialogAndCountdownBtnActivity.class);
                 break;
             default:
                 break;
