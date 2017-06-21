@@ -1,4 +1,4 @@
-package com.iven.widget.common_dialog;
+package com.iven.widget.view.common_dialog;
 
 import android.app.Dialog;
 import android.content.Context;

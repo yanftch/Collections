@@ -58,6 +58,8 @@
         </activity>
         <activity android:name=".dialog_and_countdown.DialogAndCountdownBtnActivity">
         </activity>
+        <activity android:name=".countdown_view.CountDownViewActivity">
+        </activity>
     </application>
 
 </manifest>

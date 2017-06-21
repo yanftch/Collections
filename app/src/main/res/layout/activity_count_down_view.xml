@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.yanftch.collections.countdown_view.CountDownViewActivity">
+
+    <com.iven.widget.view.countdown_view.CountDownView
+        android:id="@+id/countDownView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:bg_color="#22000000"
+        app:border_color="#55B8E2"
+        app:border_width="2dp"
+        app:text_size="12dp"
+        />
+
+    <com.iven.widget.view.countdown_view.TestView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>

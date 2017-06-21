@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.iven.widget.common_dialog.DialogUtils;
+import com.iven.widget.view.common_dialog.DialogUtils;
 import com.iven.widget.countdownview.CountdownButton;
 import com.yanftch.collections.R;
 
