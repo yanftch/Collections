@@ -2,9 +2,11 @@ package com.yanftch.collections.countdown_view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import com.iven.widget.view.countdown_view.CountDownView;
+import com.iven.widget.view.countdown_view.TestView;
 import com.yanftch.collections.R;
 
 /**
@@ -17,6 +19,7 @@ import com.yanftch.collections.R;
 public class CountDownViewActivity extends AppCompatActivity {
 
     private CountDownView countDownView;
+    private TestView tv_cccccc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,25 @@ public class CountDownViewActivity extends AppCompatActivity {
 
             @Override
             public void onFinishCount() {
-                Toast.makeText(CountDownViewActivity.this, "倒计时结束", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(CountDownViewActivity.this, "结束", Toast.LENGTH_SHORT).show();
+            }
+        });
+        tv_cccccc = (TestView) findViewById(R.id.tv_cccccc);
+        tv_cccccc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tv_cccccc.start();
+            }
+        });
+        tv_cccccc.setCountDownListener(new TestView.CountDownListener() {
+            @Override
+            public void onStartCount() {
+                Toast.makeText(CountDownViewActivity.this, "开始倒计时了~", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFinishCount() {
+                Toast.makeText(CountDownViewActivity.this, "结束倒计时了~", Toast.LENGTH_SHORT).show();
             }
         });
     }

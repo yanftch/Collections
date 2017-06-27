@@ -13,13 +13,17 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:bg_color="#22000000"
+        android:visibility="gone"
         app:border_color="#55B8E2"
         app:border_width="2dp"
         app:text_size="12dp"
         />
 
     <com.iven.widget.view.countdown_view.TestView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/tv_cccccc"
+        android:gravity="center"
+        android:text="我是文案"
         android:layout_marginTop="50dp"/>
 </LinearLayout>
