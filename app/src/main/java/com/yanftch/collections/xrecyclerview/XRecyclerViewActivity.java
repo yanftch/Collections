@@ -60,7 +60,7 @@ public class XRecyclerViewActivity extends AppCompatActivity {
         View view2 = LayoutInflater.from(this).inflate(R.layout.layout_test_header, (ViewGroup) findViewById(android.R.id.content), false);
         ((TextView) view2.findViewById(R.id.tv_head_test)).setText("我是Head---2");
         xrecycler_view.addHeaderView(view);
-        xrecycler_view.addHeaderView(view2);
+//        xrecycler_view.addHeaderView(view2);
         listener();
     }
 
