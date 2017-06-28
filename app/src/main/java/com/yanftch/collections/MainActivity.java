@@ -8,11 +8,12 @@ import android.widget.EditText;
 
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
-import com.yanftch.collections.countdown_view.CountDownViewActivity;
 import com.yanftch.collections.dialog_and_countdown.DialogAndCountdownBtnActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
 import com.yanftch.collections.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
+import com.yanftch.collections.shape.ShapeTextViewActivity;
+import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
 import com.yanftch.collections.test.TestActivity;
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     private void testFunction() {
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     public void btnTurnAct(View view) {
         switch (view.getId()) {
             case R.id.btn_01://ListView侧滑菜单效果
-//                startActivity(SwipeMenuActivity.class);
-                startActivity(CountDownViewActivity.class);
+                startActivity(SwipeMenuActivity.class);
+//                startActivity(CountDownViewActivity.class);
                 break;
             case R.id.btn_02://集成的Recyclerview
                 startActivity(XRecyclerViewActivity.class);
@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_11:
                 startActivity(DialogAndCountdownBtnActivity.class);
+                break;
+            case R.id.btn_12:
+                startActivity(ShapeTextViewActivity.class);
                 break;
             default:
                 break;

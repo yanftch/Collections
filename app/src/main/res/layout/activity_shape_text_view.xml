@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:context="com.yanftch.collections.shape.ShapeTextViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        />
+
+    <com.iven.widget.view.ShapeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sp_1"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/value_10_dp"
+        android:text="自定义背景色"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:backgroundColor="@color/color_999999"
+        app:borderWidth="@dimen/value_1_dp"
+        app:cornerRadius="5dp"/>
+
+    <com.iven.widget.view.ShapeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sp_2"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/value_10_dp"
+        android:text="自定义背景色"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundColor="@color/color_048e63"
+        app:borderWidth="@dimen/value_5_dp"
+        app:borderColor="@color/black"
+        app:cornerRadius="5dp"/>
+
+    <com.iven.widget.view.ShapeTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_sp_3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/value_20_dp"
+        android:text="自定义背景色"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundColor="@color/color_3F51B5"
+        app:borderWidth="@dimen/value_1_dp"
+        app:cornerRadius="20dp"/>
+</LinearLayout>

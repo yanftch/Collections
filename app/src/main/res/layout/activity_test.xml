@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -7,29 +8,17 @@
               android:orientation="vertical"
               tools:context="com.yanftch.collections.test.TestActivity">
 
-    <TextView
-        android:id="@+id/tv_01"
+    <com.iven.widget.view.ShapeTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="**前"
-        android:textColor="@color/color_ffffff"
-        android:textSize="30sp"
-        />
-
-    <TextView
-        android:id="@+id/tv_02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="**中"
-        />
-
-    <TextView
-        android:id="@+id/tv_03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="**后"
-        />
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/value_10_dp"
+        android:text="自定义"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:backgroundColor="@color/color_999999"
+        app:borderWidth="@dimen/value_1_dp"
+        app:cornerRadius="5dp"/>
 </LinearLayout>

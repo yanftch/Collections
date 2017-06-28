@@ -60,6 +60,8 @@
         </activity>
         <activity android:name=".countdown_view.CountDownViewActivity">
         </activity>
+        <activity android:name=".shape.ShapeTextViewActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -76,4 +76,11 @@
         <attr name="text_size" format="dimension"/>
         <attr name="text_color" format="color"/>
     </declare-styleable>
+    <!--自定义带shape的TextView-->
+    <declare-styleable name="ShapeTextView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
 </resources>
