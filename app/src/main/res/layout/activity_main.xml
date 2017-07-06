@@ -110,6 +110,14 @@
                 android:onClick="btnTurnAct"
                 android:text="自带shape的TextView"
                 android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="RV签到日历"
+                android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

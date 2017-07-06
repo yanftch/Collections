@@ -13,6 +13,7 @@ import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
 import com.yanftch.collections.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
 import com.yanftch.collections.shape.ShapeTextViewActivity;
+import com.yanftch.collections.sign_calendar.CalendarActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
@@ -78,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_12:
                 startActivity(ShapeTextViewActivity.class);
+                break;
+            case R.id.btn_13:
+                startActivity(CalendarActivity.class);
                 break;
             default:
                 break;
