@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,8 @@ import android.widget.Toast;
 import com.iven.widget.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.iven.widget.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.yanftch.collections.R;
+import com.yanftch.collections.adapter.BaseViewHolder;
+import com.yanftch.collections.adapter.CommonRvAdapter;
 
 import java.util.ArrayList;
 
@@ -30,7 +33,8 @@ public class XRecyclerViewActivity extends AppCompatActivity {
 
     private XRecyclerView xrecycler_view;
     private ArrayList<String> datas;
-    private MyAdapter mMyAdapter;
+    //    private MyAdapter mMyAdapter;
+    private CommonRvAdapter<String> mCommonRvAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +49,16 @@ public class XRecyclerViewActivity extends AppCompatActivity {
             datas.add("item" + i);
         }
         xrecycler_view = (XRecyclerView) findViewById(R.id.xrecycler_view);
-        mMyAdapter = new MyAdapter(datas);
+        mCommonRvAdapter = new CommonRvAdapter<String>(this, R.layout.item, datas) {
+            @Override
+            public void convert(BaseViewHolder holder, int position) {
+                holder.setText(R.id.text, datas.get(position) );
+            }
+        };
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         xrecycler_view.setLayoutManager(layoutManager);
-        xrecycler_view.setAdapter(mMyAdapter);
+        xrecycler_view.setAdapter(mCommonRvAdapter);
         //xrecycler_view.setPullRefreshEnabled(false);//设置禁止下拉刷新
         //xrecycler_view.setLoadingMoreEnabled(false);//设置禁止上拉加载
         xrecycler_view.setPullRefreshEnabled(true);//下拉刷新-可以
@@ -79,7 +88,8 @@ public class XRecyclerViewActivity extends AppCompatActivity {
                         for (int i = 0; i < 20; i++) {
                             datas.add("newItem" + i);
                         }
-                        mMyAdapter.notifyDataSetChanged();
+
+                        mCommonRvAdapter.notifyDataSetChanged();
                         xrecycler_view.refreshComplete();
                     }
                 }, 2000);
@@ -93,7 +103,7 @@ public class XRecyclerViewActivity extends AppCompatActivity {
                         for (int i = 0; i < 20; i++) {
                             datas.add("moreItem" + i);
                         }
-                        mMyAdapter.notifyDataSetChanged();
+                        mCommonRvAdapter.notifyDataSetChanged();
                         xrecycler_view.loadMoreComplete();
                     }
                 }, 2000);
@@ -102,12 +112,19 @@ public class XRecyclerViewActivity extends AppCompatActivity {
         /**
          * ItemClickListener
          */
-        mMyAdapter.setOnItemClickListener(new MyAdapter.onItemClickListener() {
+        mCommonRvAdapter.setOnItemClickListener(new CommonRvAdapter.OnItemClickListener() {
             @Override
-            public void onClickListener(int position) {
+            public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
                 String s = datas.get(position);
-                Toast.makeText(XRecyclerViewActivity.this, "position="+position+"          "+s, Toast.LENGTH_SHORT).show();
+                Toast.makeText(XRecyclerViewActivity.this, "position=" + position + "          " + s, Toast.LENGTH_SHORT).show();
             }
         });
+//        mMyAdapter.setOnItemClickListener(new MyAdapter.onItemClickListener() {
+//            @Override
+//            public void onClickListener(int position) {
+//                String s = datas.get(position);
+//                Toast.makeText(XRecyclerViewActivity.this, "position="+position+"          "+s, Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 }
