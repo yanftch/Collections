@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
+import com.yanftch.collections.circleprogress.CircleProgressActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
 import com.yanftch.collections.dialog_and_countdown.DialogAndCountdownBtnActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
@@ -82,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_13:
                 startActivity(CalendarActivity.class);
+                break;
+            case R.id.btn_14:
+                startActivity(CircleProgressActivity.class);
                 break;
             default:
                 break;

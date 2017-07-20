@@ -83,4 +83,16 @@
         <attr name="borderColor" format="color"/>
         <attr name="cornerRadius" format="dimension"/>
     </declare-styleable>
+    <!--圆形进度条-->
+    <declare-styleable name="RoundProgressView">
+        <attr name="roundColor" format="color|reference|integer"/>
+        <attr name="roundProgressColor" format="color|reference|integer"/>
+        <attr name="textColor" format="color|reference|integer"/>
+        <attr name="textSize" format="dimension|integer"/>
+        <attr name="roundWidth" format="dimension|integer"/>
+        <attr name="maxProgress" format="integer"/>
+        <attr name="isShowText" format="boolean"/>
+        <attr name="bgColor" format="color|reference"/>
+
+    </declare-styleable>
 </resources>
