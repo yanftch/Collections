@@ -11,11 +11,13 @@
         android:layout_height="wrap_content"
         android:tag="Head One"
         android:gravity="center"
-        android:text="this is header"
+        android:padding="@dimen/value_20_dp"
+        android:text="列表"
         android:textSize="@dimen/value_18_sp"/>
 
     <ImageView
         android:layout_width="wrap_content"
+        android:id="@+id/iv_head_click"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher_round"/>
 </LinearLayout>

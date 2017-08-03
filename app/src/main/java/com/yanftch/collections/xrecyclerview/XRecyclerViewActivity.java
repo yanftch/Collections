@@ -3,10 +3,11 @@ package com.yanftch.collections.xrecyclerview;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,11 +32,16 @@ public class XRecyclerViewActivity extends AppCompatActivity {
     private XRecyclerView xrecycler_view;
     private ArrayList<String> datas;
     private MyAdapter mMyAdapter;
+    private GridItemDecoration mGridItemDecoration;
+    private MyItemDecoration myItemDecoration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_xrecycler_view);
+        mGridItemDecoration = new GridItemDecoration(XRecyclerViewActivity.this,true);
+        myItemDecoration = new MyItemDecoration();
+
         fbcListener();
     }
 
@@ -56,14 +62,36 @@ public class XRecyclerViewActivity extends AppCompatActivity {
         xrecycler_view.setLoadingMoreEnabled(true);//上拉加载-可以
         xrecycler_view.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);//设置下拉刷新的样式
         //添加分割线
-        xrecycler_view.addItemDecoration(new MyItemDecoration());
+        xrecycler_view.addItemDecoration(myItemDecoration);
         //添加Head
         View view = LayoutInflater.from(this).inflate(R.layout.layout_test_header, xrecycler_view, false);
-        View view2 = LayoutInflater.from(this).inflate(R.layout.layout_test_header, (ViewGroup) findViewById(android.R.id.content), false);
-        ((TextView) view2.findViewById(R.id.tv_head_test)).setText("我是Head---2");
         xrecycler_view.addHeaderView(view);
-//        xrecycler_view.addHeaderView(view2);
         listener();
+        final TextView textView = (TextView) view.findViewById(R.id.tv_head_test);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RecyclerView.LayoutManager layoutManager1 = xrecycler_view.getLayoutManager();
+                if (textView.getText().toString().equals("列表")) {
+                    if (layoutManager1 instanceof LinearLayoutManager) {//线性
+                        textView.setText("图表");
+                        xrecycler_view.setLayoutManager(new GridLayoutManager(XRecyclerViewActivity.this, 2));
+                        xrecycler_view.removeItemDecoration(myItemDecoration);
+                        xrecycler_view.addItemDecoration(mGridItemDecoration);
+                        mMyAdapter.notifyDataSetChanged();
+                    }
+                } else if (textView.getText().toString().equals("图表")) {
+                    if (layoutManager1 instanceof GridLayoutManager) {//线性
+                        textView.setText("列表");
+                        xrecycler_view.setLayoutManager(new LinearLayoutManager(XRecyclerViewActivity.this));
+                        xrecycler_view.removeItemDecoration(mGridItemDecoration);
+                        xrecycler_view.addItemDecoration(myItemDecoration);
+                        mMyAdapter.notifyDataSetChanged();
+                    }
+                }
+
+            }
+        });
     }
 
     private void listener() {
