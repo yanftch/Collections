@@ -95,23 +95,4 @@
         <attr name="bgColor" format="color|reference"/>
 
     </declare-styleable>
-    <declare-styleable name="ResultRightView">
-        <!--线条颜色-->
-        <attr name="lineColor" format="color|reference"/>
-        <!--线宽-->
-        <attr name="lineWidth" format="dimension|integer|reference"/>
-        <!--拐角样式0:圆角1：平角2：锐角-->
-        <attr name="lineStrokeJoin" format="enum">
-            <enum name="round" value="0"/>
-            <enum name="bevel" value="1"/>
-            <enum name="miter" value="2"/>
-        </attr>
-        <!--线头样式0：平 1:圆角-->
-        <attr name="lineStrokeCap" format="enum">
-            <enum name="butt" value="0"/>
-            <enum name="round" value="1"/>
-            <enum name="square" value="2"/>
-        </attr>
-
-    </declare-styleable>
 </resources>
