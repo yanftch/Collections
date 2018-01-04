@@ -12,6 +12,7 @@ import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
 import com.yanftch.collections.dialog_and_countdown.DialogAndCountdownBtnActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
+import com.yanftch.collections.popupwindow.PopupWindowActivity;
 import com.yanftch.collections.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
 import com.yanftch.collections.shape.ShapeTextViewActivity;
 import com.yanftch.collections.sign_calendar.CalendarActivity;
@@ -86,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_14:
                 startActivity(CircleProgressActivity.class);
+                break;
+                case R.id.btn_15:
+                startActivity(PopupWindowActivity.class);
                 break;
             default:
                 break;
