@@ -118,6 +118,7 @@
                 android:onClick="btnTurnAct"
                 android:text="RV签到日历"
                 android:textAllCaps="false"/>
+
             <Button
                 android:id="@+id/btn_14"
                 android:layout_width="match_parent"
@@ -125,12 +126,21 @@
                 android:onClick="btnTurnAct"
                 android:text="圆形进度条"
                 android:textAllCaps="false"/>
+
             <Button
                 android:id="@+id/btn_15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="btnTurnAct"
                 android:text="PopupWindow"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="仿微博发现页"
                 android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>

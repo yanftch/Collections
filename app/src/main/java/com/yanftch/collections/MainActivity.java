@@ -9,6 +9,7 @@ import android.widget.EditText;
 import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.circleprogress.CircleProgressActivity;
 import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
+import com.yanftch.collections.design.activity.WeiBoFindPageActivity;
 import com.yanftch.collections.dialog_and_countdown.DialogAndCountdownBtnActivity;
 import com.yanftch.collections.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
@@ -88,8 +89,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_14:
                 startActivity(CircleProgressActivity.class);
                 break;
-                case R.id.btn_15:
+            case R.id.btn_15:
                 startActivity(PopupWindowActivity.class);
+                break;
+            case R.id.btn_16:
+                startActivity(WeiBoFindPageActivity.class);
                 break;
             default:
                 break;

@@ -66,6 +66,8 @@ public class PopupWindowActivity extends AppCompatActivity {
         popupWindow.setWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
         popupWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
         popupWindow.setFocusable(true);
+//        popupWindow.setAnimationStyle(R.style.anim_menu_bottombar);//设置动画效果
+        popupWindow.setAnimationStyle(R.style.CirclePopAnim);//设置动画效果
         popupWindow.setOutsideTouchable(true);
         popupWindow.setBackgroundDrawable(new BitmapDrawable());
         View view = View.inflate(this, R.layout.layout_pop_delete, null);

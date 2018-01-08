@@ -68,6 +68,8 @@
         </activity>
         <activity android:name=".popupwindow.PopupWindowActivity">
         </activity>
+        <activity android:name=".design.activity.WeiBoFindPageActivity">
+        </activity>
     </application>
 
 </manifest>
