@@ -17,6 +17,26 @@ public class EditTextAutoActivity extends BaseActivity {
         btn_auto_1 = (Button) findViewById(R.id.btn_auto_1);
     }
 
+    @Override
+    public int setLayout() {
+        return 0;
+    }
+
+    @Override
+    public void setTitle() {
+
+    }
+
+    @Override
+    public void initWidget() {
+
+    }
+
+    @Override
+    public void widgetClick(View v) {
+
+    }
+
 
     @Override
     public View[] filterViewByIds() {

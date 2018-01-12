@@ -14,7 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
+            <Button
+                android:id="@+id/btn_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnTurnAct"
+                android:text="源码"
+                android:textAllCaps="false"/>
             <Button
                 android:id="@+id/btn_01"
                 android:layout_width="match_parent"

@@ -17,6 +17,7 @@ import com.yanftch.collections.popupwindow.PopupWindowActivity;
 import com.yanftch.collections.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
 import com.yanftch.collections.shape.ShapeTextViewActivity;
 import com.yanftch.collections.sign_calendar.CalendarActivity;
+import com.yanftch.collections.source.SourceCodeActivity;
 import com.yanftch.collections.swipe.SwipeMenuActivity;
 import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnTurnAct(View view) {
         switch (view.getId()) {
+            case R.id.btn_00://源码
+                startActivity(SourceCodeActivity.class);
+                break;
             case R.id.btn_01://ListView侧滑菜单效果
                 startActivity(SwipeMenuActivity.class);
 //                startActivity(CountDownViewActivity.class);
