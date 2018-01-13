@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import com.yanftch.collections.R;
 import com.yanftch.collections.base.BaseActivity;
+import com.yanftch.collections.base.titlebar.BaseTitleBarOptions;
 
 public class SourceCodeActivity extends BaseActivity {
     private static final String TAG = "dah_SourceCodeActivity";
@@ -20,6 +21,9 @@ public class SourceCodeActivity extends BaseActivity {
     public void setTitle() {
         mBaseTitleBarView.setTitleText("标题居中");
         mBaseTitleBarView.setRightTitleText("编辑");
+        BaseTitleBarOptions options = new BaseTitleBarOptions();
+        options.titleRightString = "完成了";
+        options.titleString = "TITLE";
     }
 
     @Override

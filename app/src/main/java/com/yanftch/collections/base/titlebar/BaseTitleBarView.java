@@ -74,9 +74,21 @@ public class BaseTitleBarView extends RelativeLayout {
         DisplayMetrics dm = mContext.getApplicationContext().getResources().getDisplayMetrics();
         density = dm.density;
     }
-    public void setLeftContainerVisible(){
+
+    /**
+     * 隐藏TitleBar
+     */
+    public void setBaseTitleBarViewGone() {
+        this.setVisibility(GONE);
+    }
+
+    /**
+     * 默认设置左边返回显示
+     */
+    public void setLeftContainerVisible() {
         title_left.setVisibility(VISIBLE);
     }
+
     /**
      * 使用BaseTitleBarOptions来设置样式内容
      */
@@ -274,6 +286,43 @@ public class BaseTitleBarView extends RelativeLayout {
         title_title.setOnClickListener(clickListener);
     }
 
+    /**
+     * 设置TitleBar标题、右边文本
+     *
+     * @param titleText 标题文本
+     * @param rightText 右边文本
+     */
+    public void setBaseTitleBar(String titleText, String rightText) {
+        title_left.setVisibility(VISIBLE);
+        title_img_back.setVisibility(VISIBLE);
+        title_left_text.setVisibility(VISIBLE);
+        title_title.setText(titleText);
+        title_title.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (null != mTitleBarClick) {
+                    mTitleBarClick.onTitlePressed();
+                }
+            }
+        });
+        title_right_text.setText(rightText);
+        title_right_text.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (null != mTitleBarClick) {
+                    mTitleBarClick.onTitleRightTextPressed();
+                }
+            }
+        });
+        title_left.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (null != mTitleBarClick) {
+                    mTitleBarClick.onTitleLeftPressed();
+                }
+            }
+        });
+    }
     /*-------------------------------Title处理-----end-------------------------------*/
 
 
