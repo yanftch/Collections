@@ -6,9 +6,9 @@
               android:layout_height="match_parent"
               android:background="@color/color_ffffff"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.tab_viewpagerindicater.MIUI_TriangleActivity">
+              tools:context="com.yanftch.collections.module.tab_viewpagerindicater.MIUI_TriangleActivity">
 
-    <com.yanftch.collections.tab_viewpagerindicater.TriangleViewPagerIndicator
+    <com.yanftch.collections.module.tab_viewpagerindicater.TriangleViewPagerIndicator
         android:id="@+id/vp_indicator"
         android:layout_width="match_parent"
         android:layout_height="@dimen/value_40_dp"
@@ -16,7 +16,7 @@
         android:orientation="horizontal"
         app:visible_tab_count="3">
 
-    </com.yanftch.collections.tab_viewpagerindicater.TriangleViewPagerIndicator>
+    </com.yanftch.collections.module.tab_viewpagerindicater.TriangleViewPagerIndicator>
 
 
     <android.support.v4.view.ViewPager

@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.swiperecyclerview.EditTextAutoActivity">
+              tools:context="com.yanftch.collections.module.swiperecyclerview.EditTextAutoActivity">
 
     <Button
         android:id="@+id/btn_auto_1"

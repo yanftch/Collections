@@ -4,9 +4,9 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.tab_viewpagerindicater.EqualsLengthActivity">
+              tools:context="com.yanftch.collections.module.tab_viewpagerindicater.EqualsLengthActivity">
 
-    <com.yanftch.collections.tab_viewpagerindicater.ViewPagerIndicator
+    <com.yanftch.collections.module.tab_viewpagerindicater.ViewPagerIndicator
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="@dimen/value_40_dp"

@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.swipe.SwipeMenuActivity">
+              tools:context="com.yanftch.collections.module.swipe.SwipeMenuActivity">
 
     <ListView
         android:id="@+id/listview_swip"

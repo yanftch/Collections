@@ -15,7 +15,7 @@ import android.widget.RelativeLayout;
 import com.nostra13.universalimageloader.utils.L;
 import com.yanftch.collections.R;
 import com.yanftch.collections.base.titlebar.BaseTitleBarView;
-import com.yanftch.collections.common.CommonUtils;
+import com.yanftch.collections.module.common.CommonUtils;
 
 /**
  * User : yanftch

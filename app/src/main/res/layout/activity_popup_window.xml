@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yanftch.collections.popupwindow.PopupWindowActivity">
+    tools:context="com.yanftch.collections.module.popupwindow.PopupWindowActivity">
 
     <ListView
         android:id="@+id/listViewPop"

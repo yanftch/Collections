@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity">
+              tools:context="com.yanftch.collections.module.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity">
 
     <Button
         android:id="@+id/btn_ind_01"

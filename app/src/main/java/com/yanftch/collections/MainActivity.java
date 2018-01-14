@@ -6,23 +6,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
-import com.yanftch.collections.circlemenu.CircleMenuLayoutActivity;
-import com.yanftch.collections.circleprogress.CircleProgressActivity;
-import com.yanftch.collections.convenientbanner.ConvenientBannerActivity;
-import com.yanftch.collections.design.activity.WeiBoFindPageActivity;
-import com.yanftch.collections.dialog_and_countdown.DialogAndCountdownBtnActivity;
-import com.yanftch.collections.edittext.InputTypeLimitActivity;
-import com.yanftch.collections.five_photos.SelectFivePhotosActivity;
-import com.yanftch.collections.popupwindow.PopupWindowActivity;
-import com.yanftch.collections.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
-import com.yanftch.collections.shape.ShapeTextViewActivity;
-import com.yanftch.collections.sign_calendar.CalendarActivity;
-import com.yanftch.collections.source.SourceCodeActivity;
-import com.yanftch.collections.swipe.SwipeMenuActivity;
-import com.yanftch.collections.swiperecyclerview.EditTextAutoActivity;
-import com.yanftch.collections.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
+import com.yanftch.collections.module.circlemenu.CircleMenuLayoutActivity;
+import com.yanftch.collections.module.circleprogress.CircleProgressActivity;
+import com.yanftch.collections.module.convenientbanner.ConvenientBannerActivity;
+import com.yanftch.collections.module.design.activity.WeiBoFindPageActivity;
+import com.yanftch.collections.module.dialog_and_countdown.DialogAndCountdownBtnActivity;
+import com.yanftch.collections.module.edittext.InputTypeLimitActivity;
+import com.yanftch.collections.module.five_photos.SelectFivePhotosActivity;
+import com.yanftch.collections.module.popupwindow.PopupWindowActivity;
+import com.yanftch.collections.module.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
+import com.yanftch.collections.module.shape.ShapeTextViewActivity;
+import com.yanftch.collections.module.sign_calendar.CalendarActivity;
+import com.yanftch.collections.module.source.SourceCodeActivity;
+import com.yanftch.collections.module.swipe.SwipeMenuActivity;
+import com.yanftch.collections.module.swiperecyclerview.EditTextAutoActivity;
+import com.yanftch.collections.module.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
 import com.yanftch.collections.test.TestActivity;
-import com.yanftch.collections.xrecyclerview.XRecyclerViewActivity;
+import com.yanftch.collections.module.xrecyclerview.XRecyclerViewActivity;
 
 /**
  * Author : yanftch

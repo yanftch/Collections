@@ -29,48 +29,48 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".swipe.SwipeMenuActivity">
+        <activity android:name=".module.swipe.SwipeMenuActivity">
         </activity>
-        <activity android:name=".xrecyclerview.XRecyclerViewActivity">
+        <activity android:name=".module.xrecyclerview.XRecyclerViewActivity">
         </activity>
-        <activity android:name=".edittext.InputTypeLimitActivity">
+        <activity android:name=".module.edittext.InputTypeLimitActivity">
         </activity>
-        <activity android:name=".circlemenu.CircleMenuLayoutActivity">
+        <activity android:name=".module.circlemenu.CircleMenuLayoutActivity">
         </activity>
-        <activity android:name=".convenientbanner.ConvenientBannerActivity">
+        <activity android:name=".module.convenientbanner.ConvenientBannerActivity">
         </activity>
-        <activity android:name=".convenientbanner.threesteps.ThreeStepsActivity">
+        <activity android:name=".module.convenientbanner.threesteps.ThreeStepsActivity">
         </activity>
         <activity android:name=".test.TestActivity">
         </activity>
         <activity android:name="com.iven.widget.yan.imgpicker.util.BasePhotoActivity"/>
-        <activity android:name=".swiperecyclerview.EditTextAutoActivity">
+        <activity android:name=".module.swiperecyclerview.EditTextAutoActivity">
         </activity>
-        <activity android:name=".tab_viewpagerindicater.MIUI_TriangleActivity">
+        <activity android:name=".module.tab_viewpagerindicater.MIUI_TriangleActivity">
         </activity>
-        <activity android:name=".tab_viewpagerindicater.EqualsLengthActivity">
+        <activity android:name=".module.tab_viewpagerindicater.EqualsLengthActivity">
         </activity>
-        <activity android:name=".tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity">
+        <activity android:name=".module.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity">
         </activity>
-        <activity android:name=".five_photos.SelectFivePhotosActivity">
+        <activity android:name=".module.five_photos.SelectFivePhotosActivity">
         </activity>
-        <activity android:name=".pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity">
+        <activity android:name=".module.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity">
         </activity>
-        <activity android:name=".dialog_and_countdown.DialogAndCountdownBtnActivity">
+        <activity android:name=".module.dialog_and_countdown.DialogAndCountdownBtnActivity">
         </activity>
-        <activity android:name=".countdown_view.CountDownViewActivity">
+        <activity android:name=".module.countdown_view.CountDownViewActivity">
         </activity>
-        <activity android:name=".shape.ShapeTextViewActivity">
+        <activity android:name=".module.shape.ShapeTextViewActivity">
         </activity>
-        <activity android:name=".sign_calendar.CalendarActivity">
+        <activity android:name=".module.sign_calendar.CalendarActivity">
         </activity>
-        <activity android:name=".circleprogress.CircleProgressActivity">
+        <activity android:name=".module.circleprogress.CircleProgressActivity">
         </activity>
-        <activity android:name=".popupwindow.PopupWindowActivity">
+        <activity android:name=".module.popupwindow.PopupWindowActivity">
         </activity>
-        <activity android:name=".design.activity.WeiBoFindPageActivity">
+        <activity android:name=".module.design.activity.WeiBoFindPageActivity">
         </activity>
-        <activity android:name=".source.SourceCodeActivity">
+        <activity android:name=".module.source.SourceCodeActivity">
         </activity>
     </application>
 

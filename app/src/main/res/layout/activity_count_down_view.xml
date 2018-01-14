@@ -6,7 +6,7 @@
               android:layout_height="match_parent"
               android:gravity="center"
               android:orientation="vertical"
-              tools:context="com.yanftch.collections.countdown_view.CountDownViewActivity">
+              tools:context="com.yanftch.collections.module.countdown_view.CountDownViewActivity">
 
     <com.iven.widget.view.countdown_view.CountDownView
         android:id="@+id/countDownView"
