@@ -249,6 +249,22 @@ public class BaseTitleBarView extends RelativeLayout {
         title_left.setOnClickListener(onClickListener);
         visible();
     }
+    public void setLeftDrawable(int drawable) {
+        if (drawable != -1) {
+            title_img_back.setBackgroundResource(drawable);
+            title_left_text.setText("");
+        }
+        title_left.setVisibility(View.VISIBLE);
+        title_left.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mTitleBarClick != null) {
+                    mTitleBarClick.onTitleLeftPressed();
+                }
+            }
+        });
+        this.setVisibility(View.VISIBLE);
+    }
     /*-------------------------------左边处理-----end-------------------------------*/
 
     /*-------------------------------Title处理-----begin-------------------------------*/

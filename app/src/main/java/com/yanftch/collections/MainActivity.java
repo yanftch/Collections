@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
+import com.yanftch.collections.module.anim.activity.AnimActivity;
 import com.yanftch.collections.module.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.module.circleprogress.CircleProgressActivity;
 import com.yanftch.collections.module.convenientbanner.ConvenientBannerActivity;
@@ -98,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_16:
                 startActivity(WeiBoFindPageActivity.class);
+                break;
+            case R.id.btn_17://跳转动画
+                startActivity(AnimActivity.class);
                 break;
             default:
                 break;

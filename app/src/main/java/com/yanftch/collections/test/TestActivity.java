@@ -1,20 +1,38 @@
 package com.yanftch.collections.test;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.ActivityCompat;
+import android.view.View;
 
 import com.yanftch.collections.R;
+import com.yanftch.collections.base.BaseActivity;
 
-public class TestActivity extends AppCompatActivity {
+public class TestActivity extends BaseActivity {
     private static final String TAG = "dah_TestActivity";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
-        fbcListener();
+    public int setLayout() {
+        return R.layout.activity_test;
     }
 
-    private void fbcListener() {
+    @Override
+    public void setTitle() {
+            mBaseTitleBarView.setTitleText("Test");
+            mBaseTitleBarView.setLeftDrawable(-1);
+    }
+
+    @Override
+    public void initWidget() {
+
+    }
+
+    @Override
+    public void widgetClick(View v) {
+
+    }
+
+    @Override
+    public void onTitleLeftPressed() {
+        super.onTitleLeftPressed();
+        ActivityCompat.finishAfterTransition(this);
     }
 }

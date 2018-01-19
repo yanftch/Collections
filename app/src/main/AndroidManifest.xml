@@ -41,7 +41,9 @@
         </activity>
         <activity android:name=".module.convenientbanner.threesteps.ThreeStepsActivity">
         </activity>
-        <activity android:name=".test.TestActivity">
+        <activity
+            android:name=".test.TestActivity"
+            android:theme="@style/AppBaseTheme">
         </activity>
         <activity android:name="com.iven.widget.yan.imgpicker.util.BasePhotoActivity"/>
         <activity android:name=".module.swiperecyclerview.EditTextAutoActivity">
@@ -71,6 +73,8 @@
         <activity android:name=".module.design.activity.WeiBoFindPageActivity">
         </activity>
         <activity android:name=".module.source.SourceCodeActivity">
+        </activity>
+        <activity android:name=".module.anim.activity.AnimActivity">
         </activity>
     </application>
 

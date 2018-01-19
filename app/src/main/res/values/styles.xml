@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="time_dialog" parent="android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -109,13 +110,27 @@
     <style name="wfv" parent="@style/wf">
         <item name="android:orientation">vertical</item>
     </style>
+
     <style name="anim_menu_bottombar">
         <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
         <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
     </style>
+
     <style name="CirclePopAnim" parent="@android:style/Animation.Activity">
         <item name="android:windowEnterAnimation">@anim/right_in</item>
         <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+    <!--背景透明的主题-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/app_styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
 </resources>

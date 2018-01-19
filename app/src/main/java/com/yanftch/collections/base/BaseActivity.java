@@ -61,6 +61,9 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
             mBaseTitleBarView.setLeftContainerVisible();
         }
     }
+    protected <T extends View> T findView(int resId) {
+        return (T) (findViewById(resId));
+    }
 
     @Override
     protected void onResume() {
