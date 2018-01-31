@@ -53,6 +53,7 @@ public class ImageShareUtils {
      * 质量压缩方法
      *
      * @param image
+     * 这样适合去传递二进制的图片数据，比如微信分享图片，要传入二进制数据过去，限制32kb之内。
      * @return
      */
     public static Bitmap compressImage(Bitmap image) {
