@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/dimen_20dp">
+        android:padding="@dimen/value_20_dp">
 
         <TextView
             android:id="@+id/dialog_textView_title"
@@ -25,11 +25,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/value_20_px"
-            android:layout_marginTop="@dimen/value_20_px"
+            android:layout_marginBottom="@dimen/value_20_dp"
+            android:layout_marginTop="@dimen/value_20_dp"
             android:gravity="center"
-            android:paddingLeft="@dimen/value_20_px"
-            android:paddingRight="@dimen/value_20_px"
+            android:paddingLeft="@dimen/value_20_dp"
+            android:paddingRight="@dimen/value_20_dp"
             android:textColor="@color/funt_dialog"
             android:textSize="14sp"/>
     </LinearLayout>
@@ -42,7 +42,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/value_1_px"
+            android:layout_height="@dimen/value_1_dp"
             android:background="@color/main_background"/>
 
         <LinearLayout
@@ -56,12 +56,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:padding="@dimen/value_20_px"
+                android:padding="@dimen/value_20_dp"
                 android:textColor="@color/funt_dialog"/>
 
             <TextView
                 android:id="@+id/dialog_textView_segment"
-                android:layout_width="@dimen/value_1_px"
+                android:layout_width="@dimen/value_1_dp"
                 android:layout_height="match_parent"
                 android:background="@color/main_background"/>
 
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:padding="@dimen/value_20_px"
+                android:padding="@dimen/value_20_dp"
                 android:textColor="@color/funt_blue"/>
         </LinearLayout>
     </LinearLayout>

@@ -4,14 +4,14 @@
               android:layout_height="wrap_content"
               android:background="@drawable/shape_dialog_circle_bg"
               android:orientation="vertical"
-              android:paddingTop="@dimen/value_60_px">
+              android:paddingTop="@dimen/value_60_dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/value_50_px"
-        android:paddingRight="@dimen/value_50_px">
+        android:paddingLeft="@dimen/value_50_dp"
+        android:paddingRight="@dimen/value_50_dp">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -20,10 +20,10 @@
 
             <ImageView
                 android:id="@+id/iv_ok"
-                android:layout_width="@dimen/value_40_px"
-                android:layout_height="@dimen/value_40_px"
-                android:layout_marginRight="@dimen/value_10_px"
-                android:layout_marginTop="@dimen/value_4_px"
+                android:layout_width="@dimen/value_40_dp"
+                android:layout_height="@dimen/value_40_dp"
+                android:layout_marginRight="@dimen/value_10_dp"
+                android:layout_marginTop="@dimen/value_4_dp"
                 android:background="@mipmap/tip_ok"/>
 
             <TextView
@@ -52,10 +52,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/value_20_px"
+            android:layout_marginTop="@dimen/value_20_dp"
             android:background="@drawable/edit_bg"
             android:hint="hint..."
-            android:padding="@dimen/value_20_px"
+            android:padding="@dimen/value_20_dp"
             android:textSize="12sp"/>
     </LinearLayout>
 
@@ -63,12 +63,12 @@
         android:id="@+id/dialog_layout_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/value_20_px"
+        android:layout_marginTop="@dimen/value_20_dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/value_1_px"
+            android:layout_height="@dimen/value_1_dp"
             android:background="@color/gray"/>
 
         <LinearLayout
@@ -90,7 +90,7 @@
 
             <TextView
                 android:id="@+id/dialog_textView_segment"
-                android:layout_width="@dimen/value_1_px"
+                android:layout_width="@dimen/value_1_dp"
                 android:layout_height="match_parent"
                 android:background="@color/bottom_select_no"/>
             <!-- 右侧取消按钮 -->

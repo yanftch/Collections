@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="@dimen/value_10_px">
+        android:padding="@dimen/value_10_dp">
 
         <TextView
             android:id="@+id/tv_month_show"
@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:background="@color/color_999999"
         android:gravity="center"
-        android:padding="@dimen/value_10_px"
+        android:padding="@dimen/value_10_dp"
         android:text="你咋不上天"
         android:textColor="@color/white"/>
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.iven.widget.my_dialog.CommonDialog;
 import com.iven.widget.view.common_dialog.DialogUtils;
 import com.iven.widget.countdownview.CountdownButton;
 import com.yanftch.collections.R;
@@ -26,6 +27,12 @@ public class DialogAndCountdownBtnActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dialog_and_countdown_btn);
         initButton();
         initDialog();
+        findViewById(R.id.btn_showdialog_03).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCommonDialog();
+            }
+        });
     }
 
     private void initDialog() {
@@ -99,5 +106,30 @@ public class DialogAndCountdownBtnActivity extends AppCompatActivity {
         if (null != countdown_btn) {
             countdown_btn.cancle();
         }
+    }
+
+    private void showCommonDialog() {
+        CommonDialog.getInstance(this).setTitle("警告")
+                .setContent("你已经触犯了大忌")
+                .setLeftBtnText("是吗?")
+                .setOutsideOnClick(false)
+                .setRightBtnTextColor(R.color.colorAccent)
+                .setRightBtnText("不是吗?")
+                .setLeftBtnListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(DialogAndCountdownBtnActivity.this, "zuo", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setRightBtnListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(DialogAndCountdownBtnActivity.this, "you", Toast.LENGTH_SHORT).show();
+
+                    }
+                })
+                .show();
+
+
     }
 }
