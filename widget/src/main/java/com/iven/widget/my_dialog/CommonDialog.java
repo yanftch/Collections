@@ -28,6 +28,7 @@ public class CommonDialog {
     private TextView mContent;
     private TextView mLeft;
     private TextView mRight;
+    private TextView mDivider;
     private View.OnClickListener mLeftListener;
     private View.OnClickListener mRightListener;
 
@@ -40,6 +41,7 @@ public class CommonDialog {
         mDialog = new Dialog(context, R.style.dialog_background_dimEnabled);
         mDialog.setContentView(R.layout.common_dialog_view);
         mTitle = (TextView) mDialog.findViewById(R.id.dialog_textView_title);
+        mDivider = (TextView) mDialog.findViewById(R.id.dialog_textView_segment);
         mLeft = (TextView) mDialog.findViewById(R.id.dialog_textView_left);
         mRight = (TextView) mDialog.findViewById(R.id.dialog_textView_right);
         mContent = (TextView) mDialog.findViewById(R.id.dialog_textView_content);
@@ -193,6 +195,27 @@ public class CommonDialog {
         } else {
             mTitle.setVisibility(View.GONE);
         }
+        return this;
+    }
+    /**
+     * ----------------------------------------一个按钮----------------------------------------
+     */
+    public CommonDialog singleButton(boolean singleButton){
+        if (singleButton){
+            mRight.setVisibility(View.GONE);
+            mDivider.setVisibility(View.GONE);
+        }
+        return this;
+    }
+
+    public CommonDialog setSingleButtonText(String text) {
+        if (!TextUtils.isEmpty(text)) {
+            mLeft.setText(text);
+        }
+        return this;
+    }
+    public CommonDialog setSingleButtonTextColor(int color) {
+        mLeft.setTextColor(mContent.getResources().getColor(color));
         return this;
     }
 }

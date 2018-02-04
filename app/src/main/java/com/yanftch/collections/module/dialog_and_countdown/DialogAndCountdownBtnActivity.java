@@ -109,7 +109,8 @@ public class DialogAndCountdownBtnActivity extends AppCompatActivity {
     }
 
     private void showCommonDialog() {
-        CommonDialog.getInstance(this).setTitle("警告")
+        CommonDialog.getInstance(this).setTitle("Warn")
+                .singleButton(false)
                 .setContent("你已经触犯了大忌")
                 .setLeftBtnText("是吗?")
                 .setOutsideOnClick(false)
