@@ -16,6 +16,7 @@ import com.yanftch.collections.module.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.module.five_photos.SelectFivePhotosActivity;
 import com.yanftch.collections.module.popupwindow.PopupWindowActivity;
 import com.yanftch.collections.module.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
+import com.yanftch.collections.module.retrofit.RetrofitActivity;
 import com.yanftch.collections.module.shape.ShapeTextViewActivity;
 import com.yanftch.collections.module.sign_calendar.CalendarActivity;
 import com.yanftch.collections.module.source.SourceCodeActivity;
@@ -102,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_17://跳转动画
                 startActivity(AnimActivity.class);
+                break;
+            case R.id.btn_18:
+                startActivity(RetrofitActivity.class);
                 break;
             default:
                 break;
