@@ -180,6 +180,10 @@ public class BaseTitleBarView extends RelativeLayout {
     /*-------------------------------右边处理-----end-------------------------------*/
 
     /*-------------------------------左边处理-----begin-------------------------------*/
+    public void setLeftGone() {
+        title_left.setVisibility(INVISIBLE);
+        visible();
+    }
 
     /**
      * 设置左边文本
