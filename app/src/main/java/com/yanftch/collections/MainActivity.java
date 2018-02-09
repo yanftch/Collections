@@ -1,11 +1,18 @@
 package com.yanftch.collections;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.yanftch.applibrary.net.HttpManager;
+import com.yanftch.applibrary.net.ICallBack;
+import com.yanftch.applibrary.net.MyTestBean;
+import com.yanftch.applibrary.net.RetrofitManager;
 import com.yanftch.collections.module.anim.activity.AnimActivity;
 import com.yanftch.collections.module.circlemenu.CircleMenuLayoutActivity;
 import com.yanftch.collections.module.circleprogress.CircleProgressActivity;
@@ -16,15 +23,14 @@ import com.yanftch.collections.module.edittext.InputTypeLimitActivity;
 import com.yanftch.collections.module.five_photos.SelectFivePhotosActivity;
 import com.yanftch.collections.module.popupwindow.PopupWindowActivity;
 import com.yanftch.collections.module.pulltorefreshswipemenulistview.PulltoRefreshSwipemenuListviewActivity;
-import com.yanftch.collections.module.retrofit.RetrofitActivity;
 import com.yanftch.collections.module.shape.ShapeTextViewActivity;
 import com.yanftch.collections.module.sign_calendar.CalendarActivity;
 import com.yanftch.collections.module.source.SourceCodeActivity;
 import com.yanftch.collections.module.swipe.SwipeMenuActivity;
 import com.yanftch.collections.module.swiperecyclerview.EditTextAutoActivity;
 import com.yanftch.collections.module.tab_viewpagerindicater.AllKindsOfViewPagerIndicaterActivity;
-import com.yanftch.collections.test.TestActivity;
 import com.yanftch.collections.module.xrecyclerview.XRecyclerViewActivity;
+import com.yanftch.collections.test.TestActivity;
 
 /**
  * Author : yanftch
@@ -36,11 +42,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "dah_MainActivity";
     int[] array = {12, 1, 3, 34, 121, 565};
     private EditText mEditText;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
     }
 
     private void testFunction() {
@@ -105,7 +113,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(AnimActivity.class);
                 break;
             case R.id.btn_18:
-                startActivity(RetrofitActivity.class);
+                HttpManager.getInstance()
+                        .with(MainActivity.this)
+                        .setObservable(RetrofitManager.getService().getFengHome())
+                        .setCallBack(true, new ICallBack<MyTestBean>() {
+                            @Override
+                            public void onSuccess(MyTestBean normalBean) {
+                                Log.e(TAG, "onSuccess: " + normalBean);
+                                Log.e(TAG, "onSuccess: " + normalBean.getBannerList());
+                                for (int i = 0; i < normalBean.getBannerList().size(); i++) {
+                                    Log.e(TAG, "onSuccess: " + normalBean.getBannerList().get(i).getAdTitle());
+                                }
+                            }
+
+                            @Override
+                            public void onError(String message) {
+                                Toast.makeText(mContext, "message===" + message, Toast.LENGTH_SHORT).show();
+                                Log.e(TAG, "--------------------" + message);
+                            }
+                        });
                 break;
             default:
                 break;

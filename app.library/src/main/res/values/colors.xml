@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_242424">#242424</color>
+    <color name="transparent_bg">#00000000</color>
+    <color name="alpha_transparent_bg">#c0000000</color>
+</resources>
