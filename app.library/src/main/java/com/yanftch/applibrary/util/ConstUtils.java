@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 /**
  *     desc  : 常量相关工具类

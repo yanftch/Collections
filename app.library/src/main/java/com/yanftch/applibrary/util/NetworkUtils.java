@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.telephony.TelephonyManager;
+
+import com.yanftch.applibrary.util.LogUtils;
+import com.yanftch.applibrary.util.ShellUtils;
 
 import java.lang.reflect.Method;
 import java.net.InetAddress;

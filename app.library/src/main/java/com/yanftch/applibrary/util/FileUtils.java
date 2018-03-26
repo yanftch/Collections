@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.iven.tools.tools.ConvertUtils.bytes2HexString;
+import static com.yanftch.applibrary.util.ConvertUtils.bytes2HexString;
 
 
 /**
@@ -755,7 +755,7 @@ public class FileUtils {
             e.printStackTrace();
             return false;
         } finally {
-            CloseUtils.closeIO(is, os);
+          CloseUtils.closeIO(is, os);
         }
     }
 
@@ -905,7 +905,7 @@ public class FileUtils {
             e.printStackTrace();
             return null;
         } finally {
-            CloseUtils.closeIO(reader);
+          CloseUtils.closeIO(reader);
         }
     }
 
@@ -960,7 +960,7 @@ public class FileUtils {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            CloseUtils.closeIO(is);
+          CloseUtils.closeIO(is);
         }
         switch (p) {
             case 0xefbb:
@@ -1005,7 +1005,7 @@ public class FileUtils {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            CloseUtils.closeIO(is);
+         CloseUtils.closeIO(is);
         }
         return count;
     }
@@ -1049,7 +1049,7 @@ public class FileUtils {
      * @return 文件的MD5校验码
      */
     public static byte[] getFileMD5(String filePath) {
-        File file = StringUtils.isSpace(filePath) ? null : new File(filePath);
+        File file =StringUtils.isSpace(filePath) ? null : new File(filePath);
         return getFileMD5(file);
     }
 
@@ -1083,7 +1083,7 @@ public class FileUtils {
         } catch (NoSuchAlgorithmException | IOException e) {
             e.printStackTrace();
         } finally {
-            CloseUtils.closeIO(dis);
+         CloseUtils.closeIO(dis);
         }
         return null;
     }

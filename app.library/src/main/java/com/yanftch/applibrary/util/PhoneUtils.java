@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -12,6 +12,8 @@ import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.util.Xml;
+
+import com.yanftch.applibrary.util.StringUtils;
 
 import org.xmlpull.v1.XmlSerializer;
 

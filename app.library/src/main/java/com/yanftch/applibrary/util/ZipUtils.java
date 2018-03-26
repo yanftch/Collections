@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -16,7 +16,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
-import static com.iven.tools.tools.ConstUtils.KB;
+import static com.yanftch.applibrary.util.ConstUtils.KB;
 
 
 /**

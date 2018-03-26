@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import android.app.ActivityManager;
 import android.app.AppOpsManager;
@@ -10,6 +10,9 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.provider.Settings;
+
+import com.yanftch.applibrary.util.LogUtils;
+import com.yanftch.applibrary.util.StringUtils;
 
 import java.util.Arrays;
 import java.util.HashSet;

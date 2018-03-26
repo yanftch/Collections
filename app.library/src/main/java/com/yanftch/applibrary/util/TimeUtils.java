@@ -1,5 +1,6 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
+import com.yanftch.applibrary.util.ConstUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,11 +9,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-import static com.iven.tools.tools.ConstUtils.DAY;
-import static com.iven.tools.tools.ConstUtils.HOUR;
-import static com.iven.tools.tools.ConstUtils.MIN;
-import static com.iven.tools.tools.ConstUtils.MSEC;
-import static com.iven.tools.tools.ConstUtils.SEC;
+import static com.yanftch.applibrary.util.ConstUtils.*;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import java.security.MessageDigest;
 import java.util.Locale;

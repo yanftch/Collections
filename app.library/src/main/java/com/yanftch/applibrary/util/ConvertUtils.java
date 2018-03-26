@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -18,10 +17,7 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
-import static com.iven.tools.tools.ConstUtils.BYTE;
-import static com.iven.tools.tools.ConstUtils.GB;
-import static com.iven.tools.tools.ConstUtils.KB;
-import static com.iven.tools.tools.ConstUtils.MB;
+import static com.yanftch.applibrary.util.ConstUtils.*;
 
 
 /**

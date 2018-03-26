@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -87,7 +87,7 @@ public class AppUtils {
         File file = FileUtils.getFileByPath(filePath);
         if (!FileUtils.isFileExists(file)) return false;
         String command = "LD_LIBRARY_PATH=/vendor/lib:/system/lib pm install " + filePath;
-        ShellUtils.CommandResult commandResult = ShellUtils.execCmd(command, !isSystemApp(context), true);
+        ShellUtils.CommandResult commandResult =ShellUtils.execCmd(command, !isSystemApp(context), true);
         return commandResult.successMsg != null && commandResult.successMsg.toLowerCase().contains("success");
     }
 
@@ -126,7 +126,7 @@ public class AppUtils {
     public static boolean uninstallAppSilent(Context context, String packageName, boolean isKeepData) {
         if (StringUtils.isEmpty(packageName)) return false;
         String command = "LD_LIBRARY_PATH=/vendor/lib:/system/lib pm uninstall " + (isKeepData ? "-k " : "") + packageName;
-        ShellUtils.CommandResult commandResult = ShellUtils.execCmd(command, !isSystemApp(context), true);
+         ShellUtils.CommandResult commandResult =  ShellUtils.execCmd(command, !isSystemApp(context), true);
         return commandResult.successMsg != null && commandResult.successMsg.toLowerCase().contains("success");
     }
 
@@ -137,12 +137,12 @@ public class AppUtils {
      * @return {@code true}: 是<br>{@code false}: 否
      */
     public static boolean isAppRoot() {
-        ShellUtils.CommandResult result = ShellUtils.execCmd("echo root", true);
+         ShellUtils.CommandResult result =  ShellUtils.execCmd("echo root", true);
         if (result.result == 0) {
             return true;
         }
         if (result.errorMsg != null) {
-            LogUtils.d("isAppRoot", result.errorMsg);
+             LogUtils.d("isAppRoot", result.errorMsg);
         }
         return false;
     }
@@ -455,7 +455,7 @@ public class AppUtils {
     public static String getAppSignatureSHA1(Context context, String packageName) {
         Signature[] signature = getAppSignature(context, packageName);
         if (signature == null) return null;
-        return EncryptUtils.encryptSHA1ToString(signature[0].toByteArray()).
+        return  EncryptUtils.encryptSHA1ToString(signature[0].toByteArray()).
                 replaceAll("(?<=[0-9A-F]{2})[0-9A-F]{2}", ":$0");
     }
 
@@ -487,7 +487,7 @@ public class AppUtils {
      * @return {@code true}: 是<br>{@code false}: 否
      */
     public static boolean isAppForeground(Context context, String packageName) {
-        return !StringUtils.isEmpty(packageName) && packageName.equals(ProcessUtils.getForegroundProcessName(context));
+        return !StringUtils.isEmpty(packageName) && packageName.equals( ProcessUtils.getForegroundProcessName(context));
     }
 
     /**
@@ -686,13 +686,13 @@ public class AppUtils {
      * @return {@code true}: 成功<br>{@code false}: 失败
      */
     public static boolean cleanAppData(Context context, File... dirs) {
-        boolean isSuccess = CleanUtils.cleanInternalCache(context);
-        isSuccess &= CleanUtils.cleanInternalDbs(context);
-        isSuccess &= CleanUtils.cleanInternalSP(context);
+        boolean isSuccess =  CleanUtils.cleanInternalCache(context);
+        isSuccess &=  CleanUtils.cleanInternalDbs(context);
+        isSuccess &=  CleanUtils.cleanInternalSP(context);
         isSuccess &= CleanUtils.cleanInternalFiles(context);
         isSuccess &= CleanUtils.cleanExternalCache(context);
         for (File dir : dirs) {
-            isSuccess &= CleanUtils.cleanCustomCache(dir);
+            isSuccess &=  CleanUtils.cleanCustomCache(dir);
         }
         return isSuccess;
     }

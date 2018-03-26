@@ -20,6 +20,9 @@ import com.yanftch.collections.R;
 public class TestFragment extends Fragment {
     private String name;
 
+    public TestFragment() {
+    }
+
     public TestFragment(String name) {
         this.name = name;
     }

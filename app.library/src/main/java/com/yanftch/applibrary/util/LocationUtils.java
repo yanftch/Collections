@@ -1,4 +1,4 @@
-package com.iven.tools.tools;
+package com.yanftch.applibrary.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -77,7 +77,7 @@ public class LocationUtils {
         mLocationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         mListener = listener;
         if (!isLocationEnabled(context)) {
-            ToastUtils.showShortToastSafe(context, "无法定位，请打开定位服务");
+         ToastUtils.showShortToastSafe(context, "无法定位，请打开定位服务");
             return false;
         }
         String provider = mLocationManager.getBestProvider(getCriteria(), true);
